@@ -4,8 +4,8 @@
   "description": "Aplicación web sencilla para registrar tareas. Proyecto desarrollado como parte del curso \"Herramientas de Desarrollo\", utilizando Git como sistema de control de versiones.",
   "main": "script.js",
   "scripts": {
-    "test": "jest"
-  },
+  "test": "jest"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
