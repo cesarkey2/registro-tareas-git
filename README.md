@@ -6,7 +6,7 @@ Aplicación web sencilla para registrar tareas. Proyecto desarrollado como parte
 
 - Agregar tareas
 - Marcar tareas como completadas
-- Mejoras en maneras de organizar
+- Mejora la manera de organizar tareas
 
 ## Tecnologías
 
