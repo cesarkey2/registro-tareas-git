@@ -1,15 +1,15 @@
-name: CD - Despliegue a GitHub Pages
+name: CD - Registro de Tareas
 
 on:
   push:
     branches: [main]
 
 jobs:
-  build-test-deploy:
+  test-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Clonar repositorio
+      - name: Clonar el repositorio
         uses: actions/checkout@v3
 
       - name: Instalar Node.js
@@ -17,10 +17,10 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Instalar dependencias (Jest)
+      - name: Instalar dependencias
         run: npm install
 
-      - name: Ejecutar pruebas (Jest demo)
+      - name: Ejecutar pruebas
         run: npm test
 
       - name: Desplegar a GitHub Pages
@@ -28,3 +28,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
+
