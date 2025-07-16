@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-name: registro-tareas
+  name: registro-tareas
 spec:
-replicas: 1
-selector:
-matchLabels:
-app: tareas
-template:
-metadata:
-labels:
-app: tareas
-spec:
-containers:
-- name: web
-image: cesarwar/registro-tareas-app:v1
-ports:
-- containerPort: 80
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tareas
+  template:
+    metadata:
+      labels:
+        app: tareas
+    spec:
+      containers:
+        - name: web
+          image: cesarwar/registro-tareas-app:v1
+          ports:
+            - containerPort: 80
